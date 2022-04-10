@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>계산기</title>
+	</head>
+	<style>
+		#calc {
+			width: 350px;
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+			padding: 1em;
+		}
+
+		.calc-sum {
+			max-width: 350px;
+			padding: 1em;
+			display: flex;
+			justify-content: right;
+			background-color: rgb(129, 128, 128);
+			color: #ffffff;
+			font-size: 24px;
+		}
+
+		.calc-value {
+			text-align: right;
+		}
+
+		.calc-body {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.calc-body button {
+			width: 100%;
+			padding: 2em 1em;
+			background-color: transparent;
+			outline: none;
+			border: 1px solid #dbdbdb;
+			cursor: pointer;
+		}
+	</style>
+	<body>
+		<div id="calc">
+			<div class="calc-sum">
+				<div class="calc-value"></div>
+			</div>
+
+			<div class="calc-body">
+				<button value="AC">AC</button>
+				<button value="^">^</button>
+				<button value="%">%</button>
+				<button value="/">/</button>
+			</div>
+			<div class="calc-body">
+				<button value="7">7</button>
+				<button value="8">8</button>
+				<button value="9">9</button>
+				<button value="*">x</button>
+			</div>
+			<div class="calc-body">
+				<button value="4">4</button>
+				<button value="5">5</button>
+				<button value="6">6</button>
+				<button value="-">-</button>
+			</div>
+			<div class="calc-body">
+				<button value="1">1</button>
+				<button value="2">2</button>
+				<button value="3">3</button>
+				<button value="+">+</button>
+			</div>
+			<div class="calc-body">
+				<button value="0">0</button>
+				<button value="=">=</button>
+			</div>
+		</div>
+	</body>
+	<script src="index.js"></script>
+</html>
