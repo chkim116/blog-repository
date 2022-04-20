@@ -125,7 +125,7 @@ function calculator() {
 			break;
 		}
 		case '^': {
-			calcValueObj.currentValue ^= calcValueObj.temp;
+			calcValueObj.currentValue **= calcValueObj.temp;
 			break;
 		}
 		default: {
